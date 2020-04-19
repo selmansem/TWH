@@ -7,7 +7,7 @@ TWH is a basic webapp to control if your Telegram bot is hooked to your script o
 - RAM: 512MB+
 - Processor: 1.0GHz+
 - Web Server: Apache or Nginx.
-- Database: MySQL version 5.0. 15 or greater or any version of MariaDB.
+- Database: MySQL version 5.0.15 or greater or any version of MariaDB.
 - PHP: Version 7.3 or greater.
 - Git: Version 2.12.0+
 
