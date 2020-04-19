@@ -20,10 +20,10 @@ if ($_POST) {
     file_put_contents($file,str_replace('##DBPASSWORD##',$_POST['DBPASSWORD'],file_get_contents($file)));
     file_put_contents($file,str_replace('##DBNAME##',$_POST['DBNAME'],file_get_contents($file)));
     $hookit = "https://api.telegram.org/bot".$_POST['BOTTOKEN']."/setWebhook?url=".$_POST['WEBHOOKHOST'];
-    // file_get_contents($hookit);
-    // unlink('index.php');
-    // unlink(__FILE__);
-    header("Location: ".$hookit);
+    file_get_contents($hookit);
+    unlink('index.php');
+    unlink(__FILE__);
+    header("Location: ../");
   }
 }
 

@@ -1,8 +1,8 @@
 <?php
-// $installer = 'install/';
-// if (file_exists($installer)) {
-//   header("Location: ".$installer);
-// }
+$installer = 'install/';
+if (file_exists($installer)) {
+  header("Location: ".$installer);
+}
 
 require 'config/condata.php';
 
