@@ -59,9 +59,12 @@ $query4 = "CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8";
 $query5 = "INSERT INTO `bots` (`botNAME`, `webhook`) VALUES ('$botname', 1)";
 
-$link1 = mysqli_connect($dbshost, $dbsuname, $dbspasswd);
-mysqli_query($link1, $query1);
-sleep(5);
+if ($_POST['DBOWNER'] != 1) {
+  $link1 = mysqli_connect($dbshost, $dbsuname, $dbspasswd);
+  mysqli_query($link1, $query1);
+  sleep(5);
+}
+
 $link2 = mysqli_connect($dbshost, $dbsuname, $dbspasswd, $dbsname);
 mysqli_query($link2, $query2);
 mysqli_query($link2, $query3);

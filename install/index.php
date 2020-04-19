@@ -59,6 +59,12 @@
           <label class="font-weight-bold" for="FormControlInput7">DB Name</label>
           <input name="DBNAME" type="text" class="form-control Must" id="FormControlInput7" placeholder="mydbname" autocomplete="off" required>
         </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="DBOWNER" value="1" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Use this checkbox if your hosting provider does not allow you to create databases or you do not have a dedicated server. If you check it, remember to write the DB Name assigned to you.
+          </label>
+        </div>
         <h5 class="mt-5">Optional password</h5>
         <hr class="my-4">
         <div class="form-group">
