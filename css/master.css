@@ -1,1 +1,4 @@
 /* CSS FILE */
+hr {
+  border-top: 2px solid #636869 !important;
+}

@@ -1,15 +1,14 @@
 <?php
-$installer = 'install/index.php';
-if (file_exists($installer)) {
-  header("Location: ".$installer);
-}
+// $installer = 'install/';
+// if (file_exists($installer)) {
+//   header("Location: ".$installer);
+// }
 
 require 'config/condata.php';
-$botNAME = "SNTT";
-$reqSite = "https://api.telegram.org/bot".$botToken;
 
-$webHook = $reqSite.'/setWebhook?url=https://esgonline.es/bots/SNTT/request.php';
-$delwebHook = $reqSite.'/deleteWebhook';
+$reqSite = "https://api.telegram.org/bot".$botToken;
+$webHook = $reqSite."/setWebhook?url=".$webhookHost;
+$delwebHook = $reqSite."/deleteWebhook";
 
 if (isset($_POST['enable'])) {
   $sql1 = "UPDATE bots SET webhook = 1 WHERE botNAME = '$botNAME'";
@@ -24,7 +23,8 @@ elseif (isset($_POST['disable'])) {
   header("Location : ./");
 }
 
-
+/* IF YOU WANT TO USE THE SWITCH STATEMENT, DECOMENT AND COMMENT THE IF AND ELSEIF ABOVE */
+//
 // switch ($_POST) {
 //   case isset($_POST['enable']):
 //     $sql1 = "UPDATE bots SET webhook = 1 WHERE botNAME = '$botNAME'";
@@ -42,12 +42,12 @@ elseif (isset($_POST['disable'])) {
 // }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>SNTT | Telegram Bot</title>
+    <title><?php echo $botNAME; ?> | Telegram Bot</title>
     <link rel="icon" type="image/png" href="media/icons/favicon.ico">
-    <meta name="description" content="">
+    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="css/master.css">
@@ -61,8 +61,8 @@ elseif (isset($_POST['disable'])) {
   <body>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">SNTT Webhook</h1>
-        <p class="lead">Webapp to set or delete the SNTT webhook.</p>
+        <h1 class="display-4"><?php echo $botNAME; ?> Webhook</h1>
+        <p class="lead">Webapp to set or delete the <?php $botNAME; ?> webhook.</p>
         <p>
           <?php
             $whfalse = '<i class="fas fa-circle text-danger"></i> Isn\'t hooked right now.';
