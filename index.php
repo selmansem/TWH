@@ -1,5 +1,5 @@
 <?php
-$installer = 'install/';
+$installer = 'install/index.php';
 if (file_exists($installer)) {
   header("Location: ".$installer);
 }
