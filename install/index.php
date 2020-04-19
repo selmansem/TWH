@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <title>TWH Installer</title>
     <meta name="robots" content="noindex">
-    <link rel="icon" href="../media/icons/favicon.ico">
+    <link rel="shortcut icon" type="image/ico" href="../media/icons/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="../css/master.css">
