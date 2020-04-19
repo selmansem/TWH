@@ -25,3 +25,4 @@ TWH is a basic webapp to control if your Telegram bot is hooked to your script o
 
 ### Soon
 - Access control with PIN
+- More functions from webapp (Edit webhook url, display log, control multiple bots...)
