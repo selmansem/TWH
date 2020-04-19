@@ -22,4 +22,6 @@ TWH is a basic webapp to control if your Telegram bot is hooked to your script o
 ### Notes
 - To change the favicon replace yours in the:\
     [botproject/media/icons/favicon.ico](/media/icons/favicon.ico)
-- 
+
+### Soon
+- Access control with PIN
