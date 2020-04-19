@@ -46,7 +46,7 @@ elseif (isset($_POST['disable'])) {
   <head>
     <meta charset="utf-8">
     <title><?php echo $botNAME; ?> | Telegram Bot</title>
-    <link rel="icon" type="image/png" href="media/icons/favicon.ico">
+    <link rel="shortcut icon" type="image/ico" href="media/icons/favicon.ico">
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
