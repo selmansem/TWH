@@ -26,3 +26,6 @@ TWH is a basic webapp to control if your Telegram bot is hooked to your script o
 ### Soon
 - Access control with PIN
 - More functions from webapp (Edit webhook url, display log, control multiple bots...)
+
+### External source
+- For PIN code input style: [Bootstrap Pincode Input](https://github.com/fkranenburg/bootstrap-pincode-input) [Apache 2.0 license] by Ferry Kranenburg
