@@ -1,6 +1,6 @@
 # TWH
-## Telegram Webhook
-TWH is a basic webapp to control if your Telegram bot is hooked to your script on your server and control it.
+## Telegram Bots Manager
+TWH is a basic webapp to manage your telegram bots.
 
 ### Requirements
 - Disk Space: 100MB+
