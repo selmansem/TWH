@@ -28,6 +28,6 @@ TWH is a basic webapp to manage your telegram bots.
 - More functions from webapp (Edit webhook url, display log, control multiple bots...)
 
 ### External source
-- For PIN code input style: [Bootstrap Pincode Input](https://github.com/fkranenburg/bootstrap-pincode-input) [Apache 2.0 license] by Ferry Kranenburg
+- For PIN code input style: [Bootstrap Pincode Input](https://github.com/fkranenburg/bootstrap-pincode-input) [Apache 2.0 license] by Ferry Kranenburg\
 
-Software created with :heart:. You can support me in [Ko-fi](https://ko-fi.com/esgonline)
+<p align="center">Software created with :heart:. You can support me in <a href="https://ko-fi.com/esgonline">Ko-fi :coffee:</a></p>
